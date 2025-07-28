@@ -29,6 +29,9 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
     - Transmits messages bit-by-bit with `SIGUSR1` and `SIGUSR2`.
     - Handles integrity checks and error scenarios.
     - Clean separation between server and client logic.
+- **Bonus:**
+    - The server must acknowledge each received message by sending a signal to the client.
+    - Unicode characters support.
 - **Skills:** Signal handling, low-level C programming, custom communication protocols.
 
 
@@ -39,14 +42,18 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
     - Loads and validates custom map files, handles player and enemy movement.
     - Real-time updates of graphics and smooth collision detection.
     - Win/lose conditions, resource management, and user feedback.
+- **Bonus:**
+    - The player lose when touched by an enemy patrol.
+    - Sprite animation.
+    - Move count displayed on screen.
 - **Skills:** 2D graphics, event handling, memory management, modular code organization.
 
 
 ## 🏆 Personal Achievements
 
 - **Perfect marks** and bonus features across all projects.
-- Developed advanced algorithmic thinking, inter-process communication, and graphics programming.
-- Went beyond the requirements to ensure reliability, maintainability, and extensibility.
+- Developed advanced algorithmic thinking, inter-process communication and graphics programming.
+- Went beyond the requirements to ensure reliability, maintainability and extensibility.
 
 
 ## 📂 Repository Structure
