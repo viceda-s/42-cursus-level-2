@@ -28,7 +28,7 @@ int	error_syntax(char *str_n)
 	return (0);
 }
 
-int	error_duplicate(t_stack_node *a, int n)
+int	error_duplicate(t_node *a, int n)
 {
 	if (!a)
 		return (0);
@@ -41,10 +41,10 @@ int	error_duplicate(t_stack_node *a, int n)
 	return (0);
 }
 
-void	free_stack(t_stack_node **stack)
+void	free_stack(t_node **stack)
 {
-	t_stack_node	*tmp;
-	t_stack_node	*current;
+	t_node	*tmp;
+	t_node	*current;
 
 	if (!stack)
 		return ;
@@ -59,7 +59,7 @@ void	free_stack(t_stack_node **stack)
 	*stack = NULL;
 }
 
-void	free_errors(t_stack_node **a)
+void	free_errors(t_node **a)
 {
 	free_stack(a);
 	ft_printf("Error\n");

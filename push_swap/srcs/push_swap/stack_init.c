@@ -6,13 +6,13 @@
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 11:16:46 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/07/07 18:03:43 by viceda-s         ###   ########.fr       */
+/*   Updated: 2026/01/06 16:22:21 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/push_swap.h"
 
-static long	ft_atol(const char *s)
+long	ft_atol(const char *s)
 {
 	long	result;
 	int		sign;
@@ -33,14 +33,14 @@ static long	ft_atol(const char *s)
 	return (result * sign);
 }
 
-static void	append_node(t_stack_node **stack, int n)
+void	append_node(t_node **stack, int n)
 {
-	t_stack_node	*node;
-	t_stack_node	*last_node;
+	t_node	*node;
+	t_node	*last_node;
 
 	if (!stack)
 		return ;
-	node = malloc(sizeof(t_stack_node));
+	node = malloc(sizeof(t_node));
 	if (!node)
 		return ;
 	node->next = NULL;
@@ -59,7 +59,7 @@ static void	append_node(t_stack_node **stack, int n)
 	}
 }
 
-void	init_stack_a(t_stack_node **a, char **argv)
+void	init_stack_a(t_node **a, char **argv)
 {
 	long	n;
 	int		i;
@@ -79,7 +79,7 @@ void	init_stack_a(t_stack_node **a, char **argv)
 	}
 }
 
-t_stack_node	*get_cheapest(t_stack_node *stack)
+t_node	*get_cheapest(t_node *stack)
 {
 	if (!stack)
 		return (NULL);
@@ -92,8 +92,8 @@ t_stack_node	*get_cheapest(t_stack_node *stack)
 	return (NULL);
 }
 
-void	prep_for_push(t_stack_node **stack,
-						t_stack_node *top_node,
+void	prep_for_push(t_node **stack,
+						t_node *top_node,
 						char stack_name)
 {
 	while (*stack != top_node)

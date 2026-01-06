@@ -6,17 +6,17 @@
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 11:16:23 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/07/07 18:03:24 by viceda-s         ###   ########.fr       */
+/*   Updated: 2026/01/06 17:23:17 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/push_swap.h"
 
-static void	set_target_b(t_stack_node *a, t_stack_node *b)
+static void	set_target_b(t_node *a, t_node *b)
 {
-	t_stack_node	*current_a;
-	t_stack_node	*target_node;
-	long			best_match_index;
+	t_node	*current_a;
+	t_node	*target_node;
+	long	best_match_index;
 
 	while (b)
 	{
@@ -40,7 +40,7 @@ static void	set_target_b(t_stack_node *a, t_stack_node *b)
 	}
 }
 
-void	init_nodes_b(t_stack_node *a, t_stack_node *b)
+void	init_nodes_b(t_node *a, t_node *b)
 {
 	current_index(a);
 	current_index(b);

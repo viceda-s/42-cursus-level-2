@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_stacks.c                                      :+:      :+:    :+:   */
+/*   checker.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/01 11:15:12 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/07/09 18:59:25 by viceda-s         ###   ########.fr       */
+/*   Created: 2026/01/06 10:23:41 by viceda-s          #+#    #+#             */
+/*   Updated: 2026/01/06 16:09:49 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/push_swap.h"
+#ifndef CHECKER_H
+# define CHECKER_H
 
-void	sort_stacks(t_node **a, t_node **b)
-{
-	int	len_a;
+# include "../inc/push_swap.h"
+# include "../libft/include/libft.h"
 
-	len_a = stack_len(*a);
-	if (len_a > 3 && !stack_sorted(*a))
-	{
-		pb(b, a, false);
-		len_a--;
-		while (len_a-- > 3 && !stack_sorted(*a))
-		{
-			init_nodes_a(*a, *b);
-			move_a_to_b(a, b);
-		}
-	}
-	sort_three(a);
-	while (*b)
-	{
-		init_nodes_b(*a, *b);
-		move_b_to_a(a, b);
-	}
-	current_index(*a);
-	min_on_top(a);
-}
+/* Input Validation */
+int		parse_and_validate(t_node **a, int ac, char **av);
+
+/* Command Executor */
+int		execute_command(t_node **a, t_node **b, char *cmd);
+
+#endif

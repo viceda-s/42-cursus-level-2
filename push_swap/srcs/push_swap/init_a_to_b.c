@@ -6,13 +6,13 @@
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 11:16:18 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/07/07 18:03:19 by viceda-s         ###   ########.fr       */
+/*   Updated: 2026/01/06 17:23:10 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/push_swap.h"
 
-void	current_index(t_stack_node *stack)
+void	current_index(t_node *stack)
 {
 	int	i;
 	int	median;
@@ -33,11 +33,11 @@ void	current_index(t_stack_node *stack)
 	}
 }
 
-static void	set_target_a(t_stack_node *a, t_stack_node *b)
+static void	set_target_a(t_node *a, t_node *b)
 {
-	t_stack_node	*current_b;
-	t_stack_node	*target_node;
-	long			best_match_index;
+	t_node	*current_b;
+	t_node	*target_node;
+	long	best_match_index;
 
 	while (a)
 	{
@@ -61,7 +61,7 @@ static void	set_target_a(t_stack_node *a, t_stack_node *b)
 	}
 }
 
-static void	cost_analysis_a(t_stack_node *a, t_stack_node *b)
+static void	cost_analysis_a(t_node *a, t_node *b)
 {
 	int	len_a;
 	int	len_b;
@@ -81,10 +81,10 @@ static void	cost_analysis_a(t_stack_node *a, t_stack_node *b)
 	}
 }
 
-void	set_cheapest(t_stack_node *stack)
+void	set_cheapest(t_node *stack)
 {
 	long			cheapest_value;
-	t_stack_node	*cheapest_node;
+	t_node			*cheapest_node;
 
 	if (!stack)
 		return ;
@@ -101,7 +101,7 @@ void	set_cheapest(t_stack_node *stack)
 	cheapest_node->cheapest = true;
 }
 
-void	init_nodes_a(t_stack_node *a, t_stack_node *b)
+void	init_nodes_a(t_node *a, t_node *b)
 {
 	current_index(a);
 	current_index(b);
