@@ -62,7 +62,7 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
     - Robust error management and clean process termination.
 - **Bonus:**
     - Supports multiple commands (`cmd1 | cmd2 | ... | cmdN`).
-    - Implements here_doc functionality with proper input handling.
+    - Implements `here_doc` functionality with proper input handling.
 - **Skills:** 2D graphics, event handling, memory management, modular code organization.
 
 
