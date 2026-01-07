@@ -50,7 +50,7 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
     - The player loses when touched by an enemy patrol.
     - Sprite animation.
     - Move count displayed on screen.
-- **Skills:** 2D graphics, event handling, memory management, modular code organization.
+- **Skills:** UNIX system calls, process management, file descriptors, inter-process communication.
 
 
 ### 🕹️ so_long – 125/100 🌟
@@ -63,7 +63,7 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
 - **Bonus:**
     - Supports multiple commands (`cmd1 | cmd2 | ... | cmdN`).
     - Implements here_doc functionality with proper input handling.
-- **Skills:** UNIX system calls, process management, file descriptors, inter-process communication.
+- **Skills:** 2D graphics, event handling, memory management, modular code organization.
 
 
 ## 🏆 Personal Achievements
