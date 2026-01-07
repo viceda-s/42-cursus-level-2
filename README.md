@@ -41,19 +41,6 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
 
 ### 🔗 pipex – 125/100 🌟
 
-- **Objective:** Develop a 2D game using MiniLibX. Navigate through a map, collect items, and reach the exit.
-- **Implementation:**
-    - Loads and validates custom map files, handles player and enemy movement.
-    - Real-time updates of graphics and smooth collision detection.
-    - Win/lose conditions, resource management, and user feedback.
-- **Bonus:**
-    - The player loses when touched by an enemy patrol.
-    - Sprite animation.
-    - Move count displayed on screen.
-- **Skills:** UNIX system calls, process management, file descriptors, inter-process communication.
-
-
-### 🕹️ so_long – 125/100 🌟
 
 - **Objective:** Reproduce shell pipe behavior by chaining commands using UNIX pipes and process control.
 - **Implementation:**
@@ -64,6 +51,20 @@ Welcome to my repository showcasing my progress in **Milestone 1** at School 42.
     - Supports multiple commands (`cmd1 | cmd2 | ... | cmdN`).
     - Implements `here_doc` functionality with proper input handling.
 - **Skills:** 2D graphics, event handling, memory management, modular code organization.
+
+
+### 🕹️ so_long – 125/100 🌟
+
+- **Objective:** Develop a 2D game using MiniLibX. Navigate through a map, collect items, and reach the exit.
+- **Implementation:**
+    - Loads and validates custom map files, handles player and enemy movement.
+    - Real-time updates of graphics and smooth collision detection.
+    - Win/lose conditions, resource management, and user feedback.
+- **Bonus:**
+    - The player loses when touched by an enemy patrol.
+    - Sprite animation.
+    - Move count displayed on screen.
+- **Skills:** UNIX system calls, process management, file descriptors, inter-process communication.
 
 
 ## 🏆 Personal Achievements
