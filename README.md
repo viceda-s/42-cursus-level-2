@@ -82,6 +82,7 @@ Each project is self-contained in its own subdirectory, with complete source cod
 │
 ├── push_swap/
 ├── minitalk/
+├── pipex/
 └── so_long/
 ```
 
